@@ -12,11 +12,11 @@ datasource db {
 
 model Product {
   id                     String                 @id @default(uuid())
+  type                   String
   name                   String
   priceInMnt             Int
   fit                    String
   sex                    String
-  type                   String
   brand                  String
   design                 String
   age                    String
@@ -44,7 +44,7 @@ model User {
 
 model Order {
   id        String   @id @default(uuid())
-  pricePaid Int
+  pricePaid Int      @default(0)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
