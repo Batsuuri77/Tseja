@@ -22,6 +22,7 @@ model Product {
   discountentPriceInMnt  Int
   saleStartsDate         DateTime
   saleEndsDate           DateTime
+  saleDurationInDays     Int
   priceInMnt             Int
   numberOfItems          Int
   fit                    String
